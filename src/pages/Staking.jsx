@@ -79,6 +79,7 @@ const Staking = (props) => {
     if (result) {
       const { transactionHash } = result;
       fetchDataFromSC();
+      setLoading(false);
       return message.info({
         content: (
           <AlertCustom
@@ -92,7 +93,7 @@ const Staking = (props) => {
         duration: ALERT_TIME,
       });
     }
-    setLoading(false);
+  
   };
   const userDoStake = async (amount) => {
     if (amount) {
@@ -103,10 +104,11 @@ const Staking = (props) => {
         amount,
         onError
       );
-      console.log(result);
+
       if (result) {
         const { transactionHash } = result;
-        setIsOpenStake(false);
+        setIsOpenStake(false)
+        setloadingAction(false);
         return message.info({
           content: (
             <AlertCustom
@@ -120,7 +122,7 @@ const Staking = (props) => {
           duration: ALERT_TIME,
         });
       }
-      setloadingAction(false);
+      
     }
   };
   const userDoWithdraw = async (amount) => {
