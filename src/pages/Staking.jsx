@@ -132,10 +132,10 @@ const Staking = (props) => {
         amount,
         onError
       );
-      console.log(result);
       if (result) {
         const { transactionHash } = result;
-        setIsOpenStake(false);
+        setisOpenWithdraw(false);
+        setloadingAction(false);
         return message.info({
           content: (
             <AlertCustom
@@ -149,8 +149,7 @@ const Staking = (props) => {
           duration: ALERT_TIME,
         });
       }
-      setisOpenWithdraw(false);
-      setloadingAction(false);
+    
     }
   };
 
