@@ -1,0 +1,24 @@
+.custom-modal {
+  color: #4c268f;
+
+  .ant-modal-title {
+    color: #4c268f;
+  }
+  input {
+    padding: 10px;
+    color: #4c268f;
+    font-weight: bold;
+    border: 2px dashed #4c268f;
+    &::placeholder {
+      color: rgba(53, 26, 100,0.6);
+      font-style: italic;
+    }
+  }
+  .balance-modal {
+    margin-top: 10px;
+    font-weight: bold;
+    span {
+      color: rgb(53, 26, 100);
+    }
+  }
+}

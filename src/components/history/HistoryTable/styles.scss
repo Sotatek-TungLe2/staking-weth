@@ -1,0 +1,36 @@
+.history-table {
+  padding: 40px;
+  width: calc(1280 / 1440) * 100%;
+  margin: 0 auto;
+
+  .ant-table {
+    background-color: transparent;
+    color: #99eeb4;
+    font-weight: bold;
+  }
+  .ant-table-thead > tr > th {
+    background-color: #89d6a2;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    color: #4c268f;
+  }
+  .ant-table-tbody > tr > td,
+  .ant-table.ant-table-bordered
+    > .ant-table-container
+    > .ant-table-content
+    > table
+    > thead
+    > tr
+    > th,
+  .ant-table.ant-table-bordered
+    > .ant-table-container
+    > .ant-table-content
+    > table,.ant-table.ant-table-bordered > .ant-table-container {
+    border-color: #99eeb4 !important;
+  }
+  .ant-table-tbody > tr.ant-table-row:hover > td,
+  .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background: rgba(#4c268f, 0.5);
+  }
+}

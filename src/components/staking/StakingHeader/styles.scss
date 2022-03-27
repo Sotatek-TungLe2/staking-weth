@@ -1,0 +1,48 @@
+.staking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #99eeb4;
+  .wallet-adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wallet-adress img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .wallet-adress span {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .wallet-balance {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .wallet-balance__value span {
+    color: #c1f4d2;
+  }
+  .wallet-action {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .wallet-disconnect {
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+  .wallet-history {
+    margin-left: 15px;
+  }
+}

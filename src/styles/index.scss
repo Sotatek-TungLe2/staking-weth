@@ -1,0 +1,28 @@
+// responsive
+$breakpoints: (
+  "xs": 0px,
+  "sm": 768px,
+  // tablet portrait
+  "md": 1024px,
+  // tablet landscape
+  "lg": 1280px,
+  // desktop pc
+  "xl": 1440px,
+  // laptop
+  "xxl": 1600px // desktop large,,,,
+);
+
+// responsive
+@mixin resp($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+  }
+  
+  
