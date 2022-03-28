@@ -7,7 +7,7 @@ const HistoryTable = ({dataSource,columns}) => {
   return (
     <div className='history-table'>
         <Heading>History</Heading>
-          <Table bordered dataSource={dataSource} columns={columns} />
+        <Table bordered dataSource={dataSource} columns={columns}/>
     </div>
   )
 }

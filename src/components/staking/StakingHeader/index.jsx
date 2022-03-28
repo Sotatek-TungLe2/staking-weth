@@ -28,12 +28,12 @@ const StakingHeader = ({ adress, balance, disconnectWallet }) => {
         </div>
 
         <div className="wallet-action">
-          {/* <div className="wallet-disconnect">
+          <div className="wallet-disconnect">
             <Button className="" type="primary" onClick={pressDisconnect}>
               <img src={images.icons.ico_signout} alt="disconnect" />
               <span>Disconnect</span>
             </Button>
-          </div> */}
+          </div>
           <div className="wallet-history">
             <Button className="" type="primary" onClick={pressHistory}>
               History

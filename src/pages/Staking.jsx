@@ -233,6 +233,7 @@ const Staking = (props) => {
       setTotalAmountStakedUser(amountTotalStakedValue);
       setLoading(false);
     } catch (err) {
+      setLoading(false);
       console.log(err);
     }
   };
